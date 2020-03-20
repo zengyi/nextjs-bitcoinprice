@@ -11,12 +11,12 @@ const Index = props => (
   </Layout>
 );
 
-Index.getInitialProps = async () => {
+export const getServerSideProps = async () => {
   const res = await fetch("https://api.coindesk.com/v1/bpi/currentprice.json");
   const data = await res.json();
 
   return {
-    bpi: data.bpi
+    props: { bpi: data.bpi }
   };
 };
 
