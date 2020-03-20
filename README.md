@@ -22,6 +22,9 @@ yarn run build
 Brad Traversy
 [BitzPrice](https://github.com/bradtraversy/bitzprice)
 
+Updates:
+- Updated to use Next.js 9.3 or newer,  use getStaticProps or getServerSideProps instead of getInitialProps.
+- Use dynamic object key to display currency information
 ### Version
 
 1.0.0
